@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Add your project to the list here!</h1>
+  <form action="/testPosts" method="post">
+      {% csrf-field %}
+      Project title<input type="text" name="message"></input>
+      <input type="submit" value="Add"></input>
+  </form>
+
+  <!-- <div class="row">
+    <div class="span12">
+    {{docs|markdown}}
+    </div>
+  </div> -->
+{% endblock %}
